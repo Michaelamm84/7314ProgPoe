@@ -1,17 +1,14 @@
-package com.example.prog7314progpoe
+package com.example.weather
 
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
-import org.junit.Assert.*
+class WeatherUtilsTest {
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
-class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun testTemperatureConversion() {
+        val celsius = 25.0
+        val expectedFahrenheit = 77.0
+        assertEquals(expectedFahrenheit, WeatherUtils.celsiusToFahrenheit(celsius), 0.01)
     }
 }
