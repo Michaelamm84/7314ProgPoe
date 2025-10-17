@@ -1,7 +1,1 @@
-package com.example.weather
-
-object WeatherUtils {
-    fun celsiusToFahrenheit(celsius: Double): Double {
-        return (celsius * 9 / 5) + 32
-    }
-}
+package com.example.prog7314progpoe
